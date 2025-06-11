@@ -17,7 +17,7 @@ locals {
   gke_subnet_cidr_cluster  = "10.20.0.0/16"
   gke_subnet_cidr_services = "10.30.0.0/16"
   gke_cluster_name         = "cluster1"
-  gke_version              = "1.28"
+  gke_version              = "1.30"
   gke_secondary_ranges     = flatten(module.vpc_gke[*].subnets_secondary_ranges)
 }
 
